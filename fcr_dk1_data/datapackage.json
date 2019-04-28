@@ -1,0 +1,72 @@
+{
+  "bytes": 229972,
+  "count_of_rows": 4000,
+  "hash": "62752e93872c4642e65eba8fbcd43bfb",
+  "name": "marketdata",
+  "profile": "data-package",
+  "resources": [
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "fact_fcr_dk1",
+      "path": "fact_fcr_dk1.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "HourUTC",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "product",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "PriceArea",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "PriceDKK",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "PriceEUR",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "source": "https://www.energidataservice.dk/dataset/fcrreservesdk1/resource_extract/45433ada-5648-4d83-8eab-9d642db18ca5",
+      "title": "Frequency Containment Reserves, DK1 Data"
+    }
+  ],
+  "title": "Marketdata prototype"
+}

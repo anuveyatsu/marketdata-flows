@@ -1,0 +1,187 @@
+{
+  "bytes": 441391,
+  "count_of_rows": 7137,
+  "hash": "3b8bace54c7a0fc7ef2afc0ab52439c9",
+  "profile": "data-package",
+  "resources": [
+    {
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "fact",
+      "path": "data/fact.csv",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Timestamp",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Area",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Product",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Amount",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Price_DKK",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Price_EUR",
+            "type": "number"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "fields": "Timestamp",
+            "reference": {
+              "fields": "Timestamp",
+              "resource": "time"
+            }
+          },
+          {
+            "fields": "Area",
+            "reference": {
+              "fields": "Area",
+              "resource": "area"
+            }
+          },
+          {
+            "fields": "Product",
+            "reference": {
+              "fields": "Product",
+              "resource": "product"
+            }
+          }
+        ],
+        "primaryKey": [
+          "id"
+        ]
+      }
+    },
+    {
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "product",
+      "path": "data/product.csv",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Product",
+            "type": "string"
+          }
+        ],
+        "primaryKey": [
+          "Product"
+        ]
+      }
+    },
+    {
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "area",
+      "path": "data/area.csv",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Area",
+            "type": "string"
+          }
+        ],
+        "primaryKey": [
+          "Area"
+        ]
+      }
+    },
+    {
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "time",
+      "path": "data/time.csv",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Timestamp",
+            "type": "string"
+          },
+          {
+            "name": "day",
+            "type": "string"
+          },
+          {
+            "name": "month",
+            "type": "string"
+          },
+          {
+            "name": "month_name",
+            "type": "string"
+          },
+          {
+            "name": "year",
+            "type": "year"
+          }
+        ],
+        "primaryKey": [
+          "Timestamp"
+        ]
+      }
+    }
+  ]
+}

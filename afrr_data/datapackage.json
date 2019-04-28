@@ -1,0 +1,72 @@
+{
+  "bytes": 131490,
+  "count_of_rows": 2000,
+  "hash": "472b09d92ea638c53ed8d113dabb7d73",
+  "name": "marketdata",
+  "profile": "data-package",
+  "resources": [
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "fact_afrr",
+      "path": "fact_afrr.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "HourUTC",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "product",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "PriceArea",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "PriceDKK",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "PriceEUR",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "source": "https://www.energidataservice.dk/dataset/afrrreservesdk1/resource_extract/0694e216-6713-4f84-9b98-7bb5bc11d80c",
+      "title": "Automatic Frequency Restoration Reserves"
+    }
+  ],
+  "title": "Marketdata prototype"
+}

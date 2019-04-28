@@ -1,0 +1,72 @@
+{
+  "bytes": 5377,
+  "count_of_rows": 100,
+  "hash": "dea6364f6cf497b2673d60421ff8a283",
+  "name": "marketdata",
+  "profile": "data-package",
+  "resources": [
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "fact_elspot_prices",
+      "path": "fact_elspot_prices.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "HourUTC",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "PriceArea",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "product",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "PriceDKK",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "PriceEUR",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "source": "https://www.energidataservice.dk/dataset/elspotprices/resource_extract/c86859d2-942e-4029-aec1-32d56f1a2e5d",
+      "title": "Elspot Prices Data"
+    }
+  ],
+  "title": "Marketdata prototype"
+}
