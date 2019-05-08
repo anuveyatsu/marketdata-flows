@@ -1,7 +1,7 @@
 {
-  "bytes": 5377,
-  "count_of_rows": 100,
-  "hash": "dea6364f6cf497b2673d60421ff8a283",
+  "bytes": 53104,
+  "count_of_rows": 1000,
+  "hash": "d39eb8e0acd1dba950b847556f4bb8bd",
   "name": "marketdata",
   "profile": "data-package",
   "resources": [
